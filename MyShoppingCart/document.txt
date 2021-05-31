@@ -1,0 +1,11 @@
+GET:-   http://localhost:9045/api/home
+public String homeRequest(): displays the welcome message
+
+POST:-   http://localhost:9045/api/product
+public Product insertProduct(@RequestBody Product product): insert the product
+
+GET:-   http://localhost:9045/api/product
+public List<Product> getAllProducts(): display all Product from the database
+
+DELETE:-  http://localhost:9045/api/product/1    
+public String deleteProduct(@PathVariable int id)
